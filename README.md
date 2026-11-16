@@ -52,7 +52,7 @@ Your solution is evaluated on 10 scenarios of 5 minutes each. In them, one or mo
 
 ## What to submit
 
-Commit the two files you created to your repository and submit the commit link.
+Commit the two files you created to your repository and submit the Github release link.
 
 - `UPISAS/exemplars/ramses.py`
 - `UPISAS/strategies/my_strategy.py`
