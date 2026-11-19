@@ -63,4 +63,10 @@ Commit the two files you created to your repository and submit the Github releas
 
 **Setup.** For each of the 10 scenarios, we run the naive UPISAS once and your solution once, each on a fresh RAMSES.
 
-**Adaptation objective.** You are tested on the availability of `ORDERING-SERVICE` and on how much of the run its response time stays within 800 ms, and your solution must beat the naive UPISAS on both.
+**Adaptation objective.** You are tested on the availability of `ORDERING-SERVICE`, on how much of the run its response time stays within 800 ms, and on how many instances you use. These make up one utility score, and your solution must beat the naive UPISAS's score, or match it in scenarios where it cannot be beaten:
+
+```
+Utility = 2/5 · Availability + 2/5 · Time within 800 ms + 1/5 · (5 − Average instances) / 5
+```
+
+Average instances is the number of instances per service (ordering, restaurant, payment, delivery), averaged over the run.
